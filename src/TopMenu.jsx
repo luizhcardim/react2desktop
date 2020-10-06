@@ -148,7 +148,7 @@ class TopMenu extends Component {
             {/* The links/buttons from this module */}
             {menuOptions}
 
-            <div onClick={() => this.openUserMenuHandler()} className={styles.topMenu_user_button}><div>Meus Dados</div>
+            <div onClick={() => this.openUserMenuHandler()} className={styles.topMenu_user_button}><div>User</div>
             </div>
 
             <div className={this.state.userMenu ? styles.topMenu_user : styles.topMenu_user_hide}>
