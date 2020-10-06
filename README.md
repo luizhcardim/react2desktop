@@ -85,6 +85,30 @@ const App = () => {
 export default App
 ```
 
+
+## The inherited props 
+
+React2Desktop makes the window functions accessible to child components through props. (Look at the examples > pages > example.jsx)
+
+### onWindowSelect
+
+### onChildOpen
+
+
+### onWindowSelected
+
+
+### onWindowClose
+
+### onWindowMinimize
+
+
+### onStartLoading
+
+### onStopLoading
+
+
+
 ## License
 
 MIT © [luizhcardim](https://github.com/luizhcardim)

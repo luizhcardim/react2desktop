@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styles from './app.css';
 import PropTypes from 'prop-types';
+import loading_img from '/assets/loading.gif'
+
 
 class Window extends Component {
 
@@ -383,7 +385,7 @@ class Window extends Component {
                             <div className={styles.loading_mask}>
                                 <div className={styles.loading_label}>
                                     Loading...Please wait!<br />
-                                    <img className={styles.loading_image} alt="Carregando..." src="assets/loading.gif"></img>
+                                    <img className={styles.loading_image} alt="Carregando..." src={loading_img}></img>
                                 </div>
                             </div> : null}
                     </div>

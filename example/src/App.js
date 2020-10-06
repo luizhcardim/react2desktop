@@ -4,6 +4,7 @@ import Desktop from 'react2desktop'
 import 'react2desktop/dist/index.css'
 
 import { BlankPage } from './blank'
+import Example from './pages/example'
 import Page1 from './pages/page1'
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
             { name: 'Option 3', icon: 'ri-building-line', component: <BlankPage></BlankPage> },
           ]
         },
+        { name: 'Examples', icon: 'ri-window-fill', component: <Example></Example> }
       ]
     },
     {
