@@ -1,0 +1,23 @@
+/*
+    Estilização dos forms
+*/
+
+.formSpace{
+    margin: 10px;
+    text-align: left
+}
+
+
+.botoes_form .p-button{
+    margin-right: 5px;
+    margin-bottom: 10px
+
+}
+
+.filtros_form{
+    padding-bottom: 5px
+}
+
+.filtros_form .p-component{
+    margin-right: 2px
+}
