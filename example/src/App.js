@@ -1,8 +1,10 @@
 import React from 'react'
 
 import Desktop from 'react2desktop'
-import { BlankPage } from './blank'
 import 'react2desktop/dist/index.css'
+
+import { BlankPage } from './blank'
+import Page1 from './pages/page1'
 
 const App = () => {
 
@@ -10,12 +12,12 @@ const App = () => {
   let menu = [
     {
 
-      name: 'Module Name 1', // Name of the first module
+      name: 'Game Of Thrones', // Name of the first module
       icon: 'ri-focus-line',  // Icon of the first module
       items: [
         {
           name: 'Menu 1', items: [ // Name of the first menu of the first module
-            { name: 'Option 1', icon: 'center.png', component: <BlankPage></BlankPage> }, // The options from the menu...
+            { name: 'Option 1', icon: 'center.png', component: <Page1></Page1> }, // The options from the menu...
             { name: 'Option 2', icon: 'ri-building-line', component: <BlankPage></BlankPage> },
           ]
         },

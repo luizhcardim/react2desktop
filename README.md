@@ -1,8 +1,11 @@
 # react2desktop
 
-> Desktop-like components for de ReactJS library
+> Desktop-like environment for ReactJS
 
 [![NPM](https://img.shields.io/npm/v/react2desktop.svg)](https://www.npmjs.com/package/react2desktop) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+
+![](d2r.gif)
 
 ## Install
 
@@ -17,7 +20,9 @@ import React from 'react'
 
 import Desktop from 'react2desktop'
 import 'react2desktop/dist/index.css'
-import { BlankPage } from './blank'
+
+// Here you import the elements you will put inside the windows
+import { BlankPage } from './blank' 
 
 const App = () => {
 
