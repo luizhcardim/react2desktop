@@ -1,6 +1,6 @@
 # react2desktop
 
-> Desktop-like environment for ReactJS
+> Desktop-like web environment for ReactJS
 
 [![NPM](https://img.shields.io/npm/v/react2desktop.svg)](https://www.npmjs.com/package/react2desktop) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -35,15 +35,15 @@ const App = () => {
       items: [
         {
           name: 'Menu 1', items: [ // Name of the first menu of the first module
-            { name: 'Option 1', icon: 'center.png', component: <BlankPage></BlankPage> }, // The options from the menu...
-            { name: 'Option 2', icon: 'ri-building-line', component: <BlankPage></BlankPage> },
+            { name: 'Option 1', icon: 'ri-window-fill', component: <BlankPage></BlankPage> }, // The options from the menu...
+            { name: 'Option 2', icon: 'ri-window-fill', component: <BlankPage></BlankPage> },
           ]
         },
         {
-          name: 'Menu 2', items: [ // Name of the first menu of the first module
-            { name: 'Option 1', icon: 'center.png', component: <BlankPage></BlankPage> }, // The options from the menu...
-            { name: 'Option 2', icon: 'ri-building-line', component: <BlankPage></BlankPage> },
-            { name: 'Option 3', icon: 'ri-building-line', component: <BlankPage></BlankPage> },
+          name: 'Menu 2', items: [ // Name of the second menu of the first module
+            { name: 'Option 1', icon: 'ri-window-fill', component: <BlankPage></BlankPage> }, // The options from the menu...
+            { name: 'Option 2', icon: 'ri-window-fill', component: <BlankPage></BlankPage> },
+            { name: 'Option 3', icon: 'ri-window-fill', component: <BlankPage></BlankPage> },
           ]
         },
       ]
@@ -55,16 +55,16 @@ const App = () => {
       items: [
         {
           name: 'Menu 1', items: [
-            { name: 'Option 1', icon: 'center.png', component: <BlankPage></BlankPage> },
-            { name: 'Option 2', icon: 'center.png', component: <BlankPage></BlankPage> }
+            { name: 'Option 1', icon: 'ri-window-fill', component: <BlankPage></BlankPage> },
+            { name: 'Option 2', icon: 'ri-window-fill', component: <BlankPage></BlankPage> }
           ]
         },
-        { name: 'Direct Option', icon: 'center.png', component: <BlankPage></BlankPage> }
+        { name: 'Direct Option', icon: 'ri-window-fill', component: <BlankPage></BlankPage> }
       ]
     }
   ]
 
-  // Options from the user menu
+  // Options from the user menu (top-right)
   let user_menu = [
     {
       name: 'My Profile',
@@ -85,29 +85,48 @@ const App = () => {
 export default App
 ```
 
+## Icons
 
-## The inherited props 
+This project uses the icons from [remixicon](https://remixicon.com/) library.
 
-React2Desktop makes the window functions accessible to child components through props. (Look at the examples > pages > example.jsx)
+## The Inherited Props 
 
-### onWindowSelect
+React2Desktop makes the window functions accessible to child components through props. (Look at the example > src > pages > example.jsx)
 
-### onChildOpen
+## API
+
+### Menu
+An array of objects describing the links for each module of the system.
+
+#### Modules options
+
+The 1st level of the menu array contain the description of the modules.
+
+|Name|Description|Type|
+|----|----|----|
+|name*|The name of the option/module, it must be unique.|String|
+|icon|The icon of the module.|String|
+|items|The menu options of the module.|Array of objects (menu options)|
+
+#### Module menu option
+From 2nd level further the objects describe the options from the menus inside modules.
+
+|Name|Description|Type|
+|----|----|----|
+|Name*|The name of the option/window, it must be unique.|String|
+|Icon|The icon of the window.|String|
+|Items|If this property is set, the button will act as a menu, ignoring the component property.|Array of objects (menu options)|
+|Component|The component that will be rendered inside window.|React Component|
 
 
-### onWindowSelected
+### User menu
+An array of objects describing the links for the top-right menu of the system.
 
-
-### onWindowClose
-
-### onWindowMinimize
-
-
-### onStartLoading
-
-### onStopLoading
-
-
+|Name|Description|Type|
+|----|----|----|
+|name*|The name of the option/window, it must be unique.|String|
+|action|If this property is set, the button will ignore the component property.|Function|
+|component|The component that will be rendered inside window.|React Component|
 
 ## License
 

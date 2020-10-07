@@ -16,7 +16,7 @@ export const BlankPage = (props) => {
 
     return (
         <div>
-            Contador - {counter} <br/>
+            Counter - {counter} <br/>
             <button onClick={() => somar()}>+ 1</button>
             <button onClick={() => decrementar()}>- 1</button>
         </div>

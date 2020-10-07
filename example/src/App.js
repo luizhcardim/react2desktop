@@ -52,7 +52,7 @@ const App = () => {
   let user_menu = [
     {
       name: 'My Profile',
-      component: <BlankPage></BlankPage>
+      component: <BlankPage></BlankPage>,
     },
     {
       name: 'Logout',
