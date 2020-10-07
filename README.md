@@ -7,6 +7,8 @@
 
 ![](d2r.gif)
 
+[Live Example](http://files.luizcardim.com.br/r2d/)
+
 ## Install
 
 ```bash
@@ -113,10 +115,10 @@ From 2nd level further the objects describe the options from the menus inside mo
 
 |Name|Description|Type|
 |----|----|----|
-|Name*|The name of the option/window, it must be unique.|String|
-|Icon|The icon of the window.|String|
+|name*|The name of the option/window, it must be unique.|String|
+|icon|The icon of the window.|String|
 |Items|If this property is set, the button will act as a menu, ignoring the component property.|Array of objects (menu options)|
-|Component|The component that will be rendered inside window.|React Component|
+|component|The component that will be rendered inside window.|React Component|
 
 
 ### User menu
